@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <!-- Top Navbar -->
+    <header class="top-navbar">
+        <!-- Left Section -->
+        <div class="d-flex align-items-center gap-3">
+            <button class="icon-button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="#" class="youtube-logo">
+                <i class="fab fa-youtube" style="color: #FF0000; font-size: 28px;"></i>
+                <span>YouTube</span>
+                <sup style="font-size: 10px; color: #606060;">PK</sup>
+            </a>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="voice-search">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-icons">
+            <button class="create-button">
+                <i class="fas fa-plus"></i>
+                <span>Create</span>
+            </button>
+            <button class="icon-button">
+                <i class="far fa-bell"></i>
+            </button>
+            <div class="user-avatar">
+                <img src="https://via.placeholder.com/32" alt="User">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a href="#" class="sidebar-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-play"></i>
+            <span>Shorts</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-folder"></i>
+            <span>Subscriptions</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-user"></i>
+            <span>You</span>
+        </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Category Pills -->
+        <div class="category-pills">
+            <button class="pill active">All</button>
+            <button class="pill">Music</button>
+            <button class="pill">Mixes</button>
+            <button class="pill">Reverberation</button>
+            <button class="pill">Indian pop music</button>
+            <button class="pill">Arijit Singh</button>
+            <button class="pill">Romantic Music</button>
+            <button class="pill">Nusrat Fateh Ali Khan</button>
+            <button class="pill">Pakistani dramas</button>
+            <button class="pill">Arabic Hip Hop</button>
+            <button class="pill">Movies</button>
+        </div>
+
+        <!-- Video Grid -->
+        <div class="video-grid">
+            <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=225&fit=crop" alt="Video">
+                    <span class="video-duration">4:32</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="https://via.placeholder.com/36" alt="Channel">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Mix - Ehsaas (Lyric Video) Faheem Abdullah | Vaibhav Pani | Hyder Dar</div>
+                        <div class="video-metadata">
+                            <div>Faheem Abdullah, Rauhan Malik, Aditya Rikhari, and more</div>
+                        </div>
+                    </div>
+                    <button class="video-menu">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=225&fit=crop" alt="Video">
+                    <span class="video-duration">3:45</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="https://via.placeholder.com/36" alt="Channel">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Mix - Belki - New [Slowed + Reverb] Song | Slowed Version | Emotional, Sad, Broken, Alone Song</div>
+                        <div class="video-metadata">
+                            <div>JONY, Bessan Ismail, Anuv Jain, and more</div>
+                        </div>
+                    </div>
+                    <button class="video-menu">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=225&fit=crop" alt="Video">
+                    <span class="video-duration">2:06:28</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="https://via.placeholder.com/36" alt="Channel">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Tunnel Full movie | Ha Jung-woo, Bae Doona, Oh Dal-su | IOF Hindi</div>
+                        <div class="video-metadata">
+                            <div>IOF - Hindi <i class="fas fa-check-circle" style="font-size: 12px;"></i></div>
+                            <div>7.9M views · 1 year ago</div>
+                        </div>
+                    </div>
+                    <button class="video-menu">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Card 4 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=225&fit=crop" alt="Video">
+                    <span class="video-duration">5:12</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="https://via.placeholder.com/36" alt="Channel">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Best Romantic Songs Collection | Love Songs Playlist | Bollywood Hits</div>
+                        <div class="video-metadata">
+                            <div>Music World</div>
+                            <div>2.3M views · 3 months ago</div>
+                        </div>
+                    </div>
+                    <button class="video-menu">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Card 5 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=400&h=225&fit=crop" alt="Video">
+                    <span class="video-duration">4:18</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="https://via.placeholder.com/36" alt="Channel">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Indian Pop Music Hits 2024 | Latest Bollywood Songs | Top Hindi Songs</div>
+                        <div class="video-metadata">
+                            <div>Pop Music India</div>
+                            <div>1.5M views · 2 weeks ago</div>
+                        </div>
+                    </div>
+                    <button class="video-menu">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Card 6 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=225&fit=crop" alt="Video">
+                    <span class="video-duration">6:45</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar">
+                        <img src="https://via.placeholder.com/36" alt="Channel">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">Arijit Singh Greatest Hits | Best of Arijit Singh | Romantic Songs Collection</div>
+                        <div class="video-metadata">
+                            <div>Bollywood Classics</div>
+                            <div>8.2M views · 6 months ago</div>
+                        </div>
+                    </div>
+                    <button class="video-menu">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
